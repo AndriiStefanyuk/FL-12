@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  color: #777;
+}
+@media only screen and (min-width: 900px) {
+  .header {
+    z-index: 10;
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+  .fixed_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  .fixed_menu ul {
+    margin: 0px;
+    display: flex;
+    list-style-type: none;
+  }
+  .fixed_menu ul li {
+    padding: 25px 15px;
+  }
+  .fixed_menu a {
+    text-decoration: none;
+    color: #777;
+  }
+  .nav_item a:hover {
+    color: #bfba55;
+  }
+  #logo {
+    text-transform: uppercase;
+  }
+
+  .header_image_block {
+    background-image: url("../img/home-bg.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .header_image_block p {
+    color: #bfba55;
+  }
+  .header_image_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+  }
+  .header_image_block > h1 {
+    color: #ffffff;
+    font-size: 4em;
+  }
+  .header_image_block .button {
+    text-transform: uppercase;
+  }
+  .button {
+    border-radius: 24px;
+    padding: 15px;
+    font-weight: bold;
+    border: 1px solid grey;
+    margin: 15px 0 35px 0;
+    color: #777;
+    background-color: #ffffff;
+  }
+  .main_content {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    margin: 0px auto 0px auto;
+  }
+  section {
+    margin-top: 60px;
+  }
+  section h3 {
+    color: #000;
+    font-size: 1.7em;
+  }
+  .main_photo {
+    width: 100%;
+  }
+  .comments_info {
+    display: flex;
+    align-items: center;
+  }
+  .quontity_of_comments,
+  .data_of_publ {
+    margin-left: 20px;
+  }
+  .author_of_publ {
+    margin-left: 10px;
+  }
+  .comments_info_text,
+  .footer_col > p:first-of-type {
+    line-height: 1.6;
+  }
+  .avatar {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+  }
+  .footer {
+    background-color: #000;
+    color: #ffffff;
+    margin-top: 40px;
+  }
+  .footer_wr {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    padding: 70px;
+  }
+  .footer_col {
+    width: 50%;
+  }
+  .footer_col:first-child {
+    margin-right: 120px;
+  }
+  .footer_col h3 {
+    font-size: 2.5em;
+  }
+  .footer_col p {
+    font-size: 0.8em;
+  }
+}
