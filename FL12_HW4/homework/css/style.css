@@ -37,7 +37,9 @@ body {
   }
 
   .header_image_block {
+    background-blend-mode: multiply;
     background-image: url("../img/home-bg.jpg");
+    background-color: rgba(0, 0, 0, 0.7);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
