@@ -1,19 +1,19 @@
 let a = prompt(
   'Let\'s try to identify triangle type. Enter length for "a" triangle side',
-  ""
+  ''
 );
-let b = prompt('Enter length for "b" triangle side', "");
-let c = prompt('Enter length for "c" triangle side', "");
+let b = prompt('Enter length for "b" triangle side', '');
+let c = prompt('Enter length for "c" triangle side', '');
 
 if (
-  a === "" ||
+  a === '' ||
   a === null ||
-  b === "" ||
+  b === '' ||
   b === null ||
-  c === "" ||
+  c === '' ||
   c === null
 ) {
-  alert("input values should be ONLY numbers");
+  alert('input values should be ONLY numbers');
 } else {
   a = parseInt(a);
   b = parseInt(b);
@@ -29,14 +29,14 @@ if (
     c < 0 ||
     isNaN(c)
   ) {
-    alert("A triangle must have 3 sides with a positive definite length");
+    alert('A triangle must have 3 sides with a positive definite length');
   } else if (a + b <= c || a + c <= b || c + b <= a) {
-    alert("Triangle doesn’t exist");
+    alert('Triangle doesn’t exist');
   } else if (a === b && b === c) {
-    alert("Equilateral triangle");
+    alert('Equilateral triangle');
   } else if (a === b || b === c || a === c) {
-    alert("Isosceles triangle");
+    alert('Isosceles triangle');
   } else {
-    alert("Scalene triangle");
+    alert('Scalene triangle');
   }
 }
