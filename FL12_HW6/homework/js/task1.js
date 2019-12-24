@@ -19,16 +19,18 @@ if (
   b = parseFloat(b);
   c = parseFloat(c);
   let D, x, x1, x2;
+  const n = 4,
+    k = 2;
   if (a === 0 || isNaN(a) || isNaN(b) || isNaN(c)) {
     console.log("Invalid input data");
   } else {
-    D = b * b - (a * c + a * c + a * c + a * c);
+    D = b * b - n * a * c;
     if (D === 0) {
-      x = -b / (a + a);
+      x = -b / (k * a);
       console.log("x=" + Math.round(x));
     } else if (D > 0) {
-      x1 = (-b + D) / (a + a);
-      x2 = (-b - D) / (a + a);
+      x1 = (-b + Math.sqrt(D)) / (k * a);
+      x2 = (-b - Math.sqrt(D)) / (k * a);
       console.log("x1=" + Math.round(x1) + " and " + "x2=" + Math.round(x2));
     } else if (D < 0) {
       console.log("no solution");
