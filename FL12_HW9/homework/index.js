@@ -8,7 +8,7 @@ const actors = [
   { name: 'lee', age: 28 }
 ];
 const thirty = 30;
-const msPerDay = 86400000;
+
 
 
 function convert() {
@@ -109,9 +109,9 @@ substitute([eight, three, thirty]);
 
 
 
-  function getPastDay(date, daysCount) {
-    const MILLISECONDS_IN_DAY = 86400000;
-    return new Date(date.getTime() - daysCount * MILLISECONDS_IN_DAY).getDate();
+  function getPastDay(date, daysAmount) {
+    const msPerDay = 86400000;
+    return new Date(date.getTime() - daysAmount * msPerDay).getDate();
   }
   {
     const year = 2019;
